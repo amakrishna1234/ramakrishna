@@ -3,19 +3,19 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: ashufinal-deploy
-  name: ashufinal-deploy
+    app: rajufinal-deploy
+  name: rajufinal-deploy
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ashufinal-deploy
+      app: rajufinal-deploy
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: ashufinal-deploy
+        app: rajufinal-deploy
     spec:
       containers:
       - image: amakrishna1234/amakrishnahcl:appfinal

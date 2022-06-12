@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: ashufinal-deploy
+  name: ashufinal-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ashufinal-deploy
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: ashufinal-deploy
+    spec:
+      containers:
+      - image: amakrishna1234/amakrishnahcl:appfinal
+        name: amakrishnahcl
+        ports:
+        - containerPort: 80
+        resources: {}
+status: {}
